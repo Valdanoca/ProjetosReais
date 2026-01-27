@@ -13,13 +13,21 @@ const valor_moeda = document.querySelector(".valor-moeda");
 const valor2_moeda_dolar = document.querySelector(".valor_moeda_dolar");
 
 const convers = 5.28;
+const dolar = 6.2;
 const covertido = valor/convers;
 
-valor_moeda.innerHTML = valor;
-valor2_moeda_dolar.innerHTML = covertido;
+// USANDO FUNÇÃO DE NUMBER FORMAT PARA FORMATAR VALOR EM REAIS
+valor_moeda.innerHTML = new Intl.NumberFormat("pt-BR", {
+style: "currency",
+currency: "BR"
+}).format(valor);
 
-
-
+// USANDO FUNÇÃO DE NUMBER FORMAT PARA FORMATAR VALOR EM DOLAR
+valor2_moeda_dolar.innerHTML = new Intl.NumberFormat("ne-US", {
+style: "currency",
+currency: "US"
+}).format(covertido);
+ 
 // console.log(`Botão Clicado com Sucesso!", ${valor.value}`);
     console.log(`Botão Clicado com Sucesso!", ${valor}`);
 
