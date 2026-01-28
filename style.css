@@ -7,7 +7,7 @@
 }
   
 body{
-  background-color:rgb(135, 76, 4);
+  background-color:rgb(19, 148, 2);
 }
 
 .logo{
@@ -48,7 +48,7 @@ select, input {
 }
 
 .btn{
-    background-color: rgb(14, 14, 241);
+    background-color: rgb(2, 91, 136);
     color: white;
     margin: 0 auto;
     display: block;
