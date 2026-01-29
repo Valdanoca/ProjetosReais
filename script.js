@@ -21,7 +21,7 @@ const currencys = document.querySelector(".currencys");
 if(currencys.value === "dolar"){
   // USANDO FUNÇÃO DE NUMBER FORMAT PARA FORMATAR VALOR EM DOLAR
     const covertido1 = valor/dolarHoje;
-    valor_moeda_dolar.innerHTML = new Intl.NumberFormat("ne-US", { //OU "en"
+    valor_moeda_dolar.innerHTML = new Intl.NumberFormat("en-US", { //OU "en"
     style: "currency",
     currency: "USD"
     }).format(covertido1);
