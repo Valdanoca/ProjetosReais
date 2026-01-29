@@ -16,7 +16,6 @@ const dolarHoje = 5.2;
 const euroHoje = 6.2;
 const fcfaHoje = 0.0095;
 
-
 const currencys = document.querySelector(".currencys").value;
 
 if(currencys === "dolar"){
@@ -31,16 +30,6 @@ if(currencys === "dolar"){
 if(currencys === "euro"){
 // USANDO FUNÇÃO DE NUMBER FORMAT PARA FORMATAR VALOR EM DOLAR
     const covertido2 = valor/euroHoje;
-     
-    const img = document.createElement("img");
-    img.src = " ";
-    img.alt = "Dólar";
-    img.width = 40;
-
-    logo_moedas
-valor_moeda_dolar.appendChild(img);
-
-  valor_moeda_dolar.innerHTML = "" 
     valor_moeda_dolar.innerHTML = new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency: "EUR"
